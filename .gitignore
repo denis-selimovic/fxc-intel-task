@@ -1,0 +1,4 @@
+keydb_data/
+rabbitmq_data/
+postgres_data/
+.mypy_cache/
