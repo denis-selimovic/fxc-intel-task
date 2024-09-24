@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   postgres:
@@ -10,7 +10,7 @@ services:
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
     ports:
-      - "5433:5432"
+      - "5432:5432"
 
   keydb:
     image: eqalpha/keydb:latest
@@ -18,7 +18,7 @@ services:
     volumes:
       - ./keydb_data:/data
     ports:
-      - "6380:6379"
+      - "6379:6379"
 
   rabbitmq:
     image: rabbitmq:3-management
