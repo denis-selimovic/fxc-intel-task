@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the necessary Python packages
-RUN pip install --no-cache-dir psycopg2-binary pika redis
+RUN pip install --no-cache-dir apscheduler psycopg2-binary pika redis
 
 RUN chmod +x consumer.py
 
